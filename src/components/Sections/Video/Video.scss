@@ -1,0 +1,68 @@
+.video {
+  &__wrapper {
+    border: 3px solid #EE3D48;
+    border-radius: 8px;
+    padding: 6px;
+    position: relative;
+  }
+
+  &__dots-svg {
+    position: absolute;
+    top: -14px;
+    right: -12px;
+    z-index: -1;
+  }
+
+  &__circle-svg {
+    position: absolute;
+    bottom: -40%;
+    left: -18px;
+    z-index: -1;
+  }
+
+  &__box {
+    background: url("../../../assets/images/Rectangle 181.png") no-repeat center/cover;
+    height: 188px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__play-btn {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+
+  &__play {
+    display: none;
+    position: fixed;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+  }
+
+  &__close {
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .show-video {
+    display: flex;
+  }
+}

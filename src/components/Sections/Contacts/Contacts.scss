@@ -1,0 +1,57 @@
+.contacts {
+  padding-top: 60px;
+
+  &__heading {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    display: flex;
+    padding: 20px 0;
+
+    &:nth-child(3) {
+      margin-left: 40px;
+    }
+
+    svg {
+      margin-right: 20px;
+    }
+  }
+
+  &__box {
+    position: relative;
+
+    &:nth-child(1), &:nth-child(2) {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 280px;
+        height: 1px;
+        background: #D5DAE0;
+        bottom: -20px;
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 21px;
+    color: #6A6A6A;
+    max-width: 280px;
+  }
+
+  .map {
+    margin-top: 40px;
+    max-width: 360px;
+    max-height: 360px;
+    iframe {
+      width: 100%;
+    }
+  }
+}

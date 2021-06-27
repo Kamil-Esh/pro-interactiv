@@ -1,0 +1,51 @@
+.photo {
+  padding: 61px 0 80px;
+
+  &__title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+
+    span {
+      color: #EE3D48;
+    }
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 130%;
+    margin: 20px 0 24px;
+
+    span {
+      color: #EE3D48;
+      text-decoration: underline;
+    }
+  }
+
+  .advantages {
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 16px;
+    }
+
+    &__box {
+      text-align: center;
+
+      &:nth-child(1) {
+        margin-bottom: 37.5px;
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      max-width: 143px;
+      margin: 0 auto;
+    }
+  }
+}

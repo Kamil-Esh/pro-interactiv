@@ -1,0 +1,399 @@
+.catalog {
+  background-color: #fefefe;
+
+  &__title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  &__sort {
+    margin: 19px 0;
+    position: relative;
+
+    select {
+      border: none;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-repeat: no-repeat;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #939598;
+      background-image: url("../../../assets/images/Vector (3).svg");
+      background-position-x: 95%;
+      background-position-y: 5px;
+      width: 130px;
+      margin-left: 5px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .card {
+    background: #ffffff;
+    padding: 16px 0 18px;
+
+    &__show {
+      display: none;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &__img {
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &__size {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      margin: 5px 0 24px;
+
+      span {
+        color: #6A6A6A;
+        margin-left: 5px;
+      }
+    }
+
+    &__rent-time {
+      font-size: 14px;
+      line-height: 18px;
+      color: #939598;
+      margin: 10px 0 8px;
+    }
+
+    &__time {
+      font-size: 12px;
+      line-height: 18px;
+      background: #F1F2F2;
+      border-radius: 6px;
+      padding: 4px 12px;
+      border: none;
+      display: inline-block;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+
+      &:last-child {
+        margin: 8px 0 20px;
+      }
+
+      &-active {
+        background: #EE3D48;
+        color: #FFFFFF;
+      }
+    }
+
+    &__request {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__price {
+      font-family: 'Roboto Slab', sans-serif;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 42px;
+      color: #131313;
+    }
+
+    &__btn {
+      background: #EE3D48;
+      border-radius: 6px;
+      height: 40px;
+      width: 167px;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+      border: none;
+      transition: .5s;
+
+      &:hover {
+        border: 1px solid #EE3D48;
+        background-color: #FFFFFF;
+        color: #EE3D48;
+      }
+    }
+  }
+
+  .options {
+    &__title {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      color: #EE3D48;
+      background: #FAFAFA;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 4px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        background: #EE3D48;
+        height: 1px;
+        width: 80px;
+        bottom: 0;
+      }
+    }
+
+    &__items {
+      overflow-y: scroll;
+      height: 160px;
+
+      &::-webkit-scrollbar-thumb {
+        background: #EE3D48;
+        border-radius: 2px;
+        height: 2px;
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar {
+        height: 163px;
+        background-color: #EBEBEB;
+        width: 3px;
+      }
+    }
+
+    &__item {
+      padding: 8px;
+      background: #FAFAFA;
+      display: flex;
+      align-items: center;
+      position: relative;
+      &:not(:last-child) {
+        border-bottom: 1px solid #EBEBEB;
+      }
+    }
+
+    &__img {
+      margin-right: 8px;
+    }
+
+    &__develop {
+      input {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 0;
+
+        & + label::before {
+          position: absolute;
+          right: 20px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          content: '';
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          border: 1px solid #EE3D48;
+          box-sizing: border-box;
+          border-radius: 2px;
+          background: #EE3D48;
+        }
+
+        &:checked + label:before {
+          background-image: url("../../../assets/images/Vector (2).svg");
+          background-position-x: -1px;
+        }
+      }
+    }
+
+    &__subtitle {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 12px;
+    }
+
+    &__price {
+      font-family: 'Roboto Slab', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: #EE3D48;
+    }
+  }
+
+  .mobile {
+    &-wrapper {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+      left: 0;
+      top: 0;
+      z-index: 111;
+      display: none;
+      &__show {
+        display: block;
+      }
+    }
+
+    &-form {
+      padding: 16px;
+      background-color: #fff;
+      position: relative;
+      &__svg {
+        position: absolute;
+        top: 17px;
+        right: 0;
+      }
+      &__title {
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 32px;
+      }
+
+      &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 40px;
+      }
+
+      &__subtitle {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &__size {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 2px 0 10px;
+
+        span {
+          color: #6A6A6A;
+        }
+      }
+
+      &__price {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      &__total {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+      }
+      &__heading {
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 42px;
+      }
+
+      &__time {
+        border: 1px solid #e0e3e8;
+        width: 23%;
+        background: url("../../../assets/images/Vector (3).svg") no-repeat;
+        background-position-x: 90%;
+        background-position-y: 11px;
+        appearance: none;
+        height: 30px;
+        padding-left: 5px;
+        border-radius: 6px;
+      }
+
+      &__item {
+        margin-top: 34px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 40px;
+        &:last-child {
+            padding-bottom: 16px;
+            border-bottom: 1px solid #EBEBEB;
+        }
+      }
+
+      &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 16px 0 26px;
+      }
+      &__phone {
+        position: relative;
+        input {
+          border: 1px solid #EE3D48;
+          width: 100%;
+          padding: 12px 4px 12px 5px;
+          border-radius: 6px;
+        }
+        ::placeholder {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 16px;
+          line-height: 24px;
+          color: #131313;
+        }
+        input[mask] {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 16px;
+          line-height: 24px;
+          color: #131313;
+        }
+        select {
+          font-size: 14px;
+          line-height: 16px;
+          background: #F5F5F5 url("../../../assets/images/Vector (3).svg") no-repeat;
+          background-position-x: 92%;
+          background-position-y: 13px;
+          border-radius: 6px;
+          border: none;
+          height: 32px;
+          padding-left: 15px;
+          padding-right: 36px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 4px;
+          margin: auto;
+          appearance: none;
+        }
+      }
+      &__btn {
+        width: 100%;
+        background: #EE3D48;
+        border-radius: 6px;
+        height: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        border: none;
+        display: inline-block;
+        margin-top: 14px;
+      }
+    }
+  }
+}

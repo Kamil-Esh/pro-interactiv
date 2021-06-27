@@ -1,0 +1,76 @@
+/* SWIPER */
+
+.swiper-container {
+    height: 250px;
+}
+
+
+.swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+    content: '';
+}
+
+.swiper-button-next, .swiper-button-prev {
+    height: 40px;
+    width: 40px;
+    right: 51px;
+    top: 46%;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 4px;
+    display: inline-block;
+    background: #D5DAE0;
+    border-radius: 10px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 24px;
+    height: 4px;
+    display: inline-block;
+    background: #EE3D48;
+    border-radius: 10px;
+}
+
+.modal-button-next {
+    position: absolute;
+    top: 29%;
+    right: 4%;
+    z-index: 144;
+}
+.modal-button-prev {
+    z-index: 100;
+    position: absolute;
+    top: 29%;
+    left: 4%;
+}
+.modal-pagination {
+    position: absolute;
+    text-align: center;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 555;
+    position: absolute;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .modal-pagination {
+    bottom: 38%;
+    left: 0;
+    width: 100%;
+    z-index: 555;
+    position: absolute;
+}

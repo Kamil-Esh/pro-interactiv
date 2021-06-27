@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: #131313;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+/* CONTAINER */
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+/* SECTION */
+.section__subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  color: #EE3D48;
+}
+.section__title {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
